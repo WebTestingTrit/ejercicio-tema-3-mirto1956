@@ -2,20 +2,24 @@
 // Se añadirán uno a uno con el método push(item)
 // Se recuperarán uno a uno con el método pop()
 
-const fruits = ['manzana', 'pera', 'naranja', 'fresa', 'mango', 'melón']
+const fruits = [];
 
-const arrFruits = () => {
-    fruits.push('melocotón')
-    console.log(fruits)
-    
-    const popItem = fruits.pop()
-    console.log(fruits)
-    console.log(popItem)
-    return popItem
-}
+const addFruit = fruta => {
+  fruits.push(fruta);
+};
 
-arrFruits()
+const getFruit = () => {
+  const popItem = fruits.pop();
+
+  return popItem;
+};
+
+const listFruit = () => {
+  return fruits;
+};
 
 module.exports = {
-    arrFruits
-}
+  addFruit,
+  getFruit,
+  listFruit
+};
