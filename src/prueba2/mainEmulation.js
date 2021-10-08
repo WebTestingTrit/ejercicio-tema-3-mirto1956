@@ -1,4 +1,4 @@
-const { GetBrowser } = require('../../lib/puppets');
+const { GetBrowser } = require('../lib/puppets');
 
 const emulation = require('./emulation');
 async function testEmulation() {

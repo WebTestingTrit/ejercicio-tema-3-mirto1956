@@ -1,4 +1,4 @@
-const { GetBrowser, CloseBrowser } = require('../../lib/puppets');
+const { GetBrowser, CloseBrowser } = require('../lib/puppets');
 
 async function test() {
   const browser = await GetBrowser();
